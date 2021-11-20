@@ -431,7 +431,7 @@ body .box .conteneurCV{
 a{
 	outline: none;
 	text-decoration: none;
-	color: var(--main-blanc-casse);
+	color: var(--main-jaune-pastel);
 	font-family: 'Playfare Display', sans-serif;
 	font-size: 16px;
 	text-align: justify;
@@ -445,7 +445,7 @@ body .box .conteneurCV a:hover figcaption{
 body .box ul li > a{
 	outline: none;
 	text-decoration: none;
-	color: var(--main-blanc-casse);
+	color: var(--main-jaune-pastel);
 	font-family: 'Playfare Display', sans-serif;
 	font-size: 16px;
 	text-align: justify;
@@ -456,20 +456,39 @@ body .box ul li > a:hover{
 	color: var(--main-onyx);
 }
 
-body .box .macroSkillbox{
+.skillContainer {
+  flex-direction: line;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box .skillContainer > .Colu1{
+  width: 30%;
+}
+
+.box .skillContainer > .Colu2{
+  width: 30%;
+}
+
+.box .skillContainer > .Colu3{
+  width: 30%;
+}
+
+body .box > .macroSkillbox {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	background : var(--main-bleu-pastel);
-	box-sizing: border-box;
-	width: 80%;
-	padding-left: 10%;
-	padding-right: 10%;
+	width: 95%;
+	padding-left: 1%;
+	padding-right: 1%;
 	align-items: center;
 }
 
+
 body .box .macroSkillbox .skillBox{
 	box-sizing: border-box;
-	width: 80%;
+	width: 95%;
 	margin: 20px 0;
 	color : var(--main-onyx);
 }
